@@ -174,7 +174,8 @@ Use `mode` to control the header and scrolling behavior.
       this.async('scroll');
     },
 
-    modeChanged: function() {
+    modeChanged: function(oldMode, newMode) {      
+      ((oldMode != '') && (oldMode != newMode)) && this.clean(oldMode, newMode);
       this.scroll();
     },
 
@@ -217,6 +218,16 @@ Use `mode` to control the header and scrolling behavior.
       }
       
       this.fire('scroll', {target: this.scroller}, this, false);
+    },
+
+    clean: function(oldMode, newMode) {
+      var tallMode = {'waterfall-tall': 1, 'cover': 1};
+
+      var header = this.header;
+  
+      if (header) {  
+        tallMode[oldMode] && header.classList.remove(this.tallClass);
+      }        
     }
 
   });
