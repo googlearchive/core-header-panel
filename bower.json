@@ -1,7 +1,20 @@
 {
   "name": "core-header-panel",
   "private": true,
+  "authors": [
+    "The Polymer Authors"
+  ],
   "dependencies": {
-    "polymer": "Polymer/polymer#master"
+    "polymer": "Polymer/polymer#0.8-preview",
+    "layout": "Polymer/layout#master"
+  },
+  "devDependencies": {
+    "webcomponentsjs": "~0.5.5",
+    "core-component-page": "Polymer/core-component-page#~0.5.5"
+  },
+  "main": "core-header-panel.html",
+  "repo": {
+    "type": "git",
+    "url": "git://github.com/Polymer/core-header-panel.git"
   }
 }
