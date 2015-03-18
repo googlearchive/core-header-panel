@@ -32,6 +32,7 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
 }
 
 #mainContainer {
+  -webkit-transform: translateZ(0);
   transform: translateZ(0);
 }
 
