@@ -1,4 +1,4 @@
 core-header-panel
 ===================
 
-See the [component page](http://polymer-project.org/docs/elements/core-elements.html#core-header-panel) for more information.
+See the [component page](https://www.polymer-project.org/0.5/docs/elements/core-header-panel.html) for more information.
